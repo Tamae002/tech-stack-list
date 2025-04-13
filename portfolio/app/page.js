@@ -1,38 +1,29 @@
-import { Avatar, Card } from "./container"
+import { Card } from "./card"
 
 export default function app(){
   return (
-    <section>
-      <Card>
-        <Avatar 
-          name='react'
-          imageId= '473768'
-          isBackend={false}
-        />
-      </Card>
-      <Card>
-        <Avatar 
-          name='laravel'
-          imageId= '473693'
-          isBackend={true}
-        />
-      </Card>
-      <Card>
-        <Avatar 
-          name='express'
-          imageId='330398'
-          isBackend={true}
-        />
-      </Card>
-      
-    </section>
+    <>
+      <header style={{
+        fontFamily:"Inter",
+        fontSize:"2.25rem",
+        display: 'flex',
+        justifyContent: 'center',
+        margin: '50px'
+      }}>
+        <h1>
+          List TechStack 2025!
+        </h1>
+      </header>
+      <Card />
+      <footer style={{
+        fontFamily:"Inter",
+        fontSize:"1rem",
+        display: 'flex',
+        justifyContent: 'center',
+        margin: '100px'
+      }}>
+        <p>Thanks for visiting!</p>
+      </footer>
+    </>
   )
 }
-
-
-
-
-
-// <img src="https://www.svgrepo.com/show/473768/react.svg" alt="icon"/>
-// <img src="https://www.svgrepo.com/show/473693/laravel.svg"/>
-// <img src="https://www.svgrepo.com/show/330398/express.svg"/>
